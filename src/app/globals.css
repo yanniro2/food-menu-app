@@ -25,3 +25,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.btn {
+  @apply mt-[20px] rounded-full text-[#000000] bg-[#ffffff] py-[10px] w-full font-bold;
+}
+
+.btn-1 {
+  @apply  px-6 py-3 rounded-full text-[#000000] bg-[#ffffff] font-semibold;
+}
