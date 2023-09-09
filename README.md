@@ -1,6 +1,6 @@
 # Online Food Ordering Dashboard
 
-![Project Preview]("./Img/sample.png")
+![Project Preview](./Img/sample.png)
 
 Welcome to my Next.js project showcasing an interactive and beautiful dark-themed frontend for online food ordering! This project is designed to provide a user-friendly interface for customers to order food online. It utilizes Next.js for the frontend and Tailwind CSS for styling. The data for the menu and items is fetched from an external data file.
 
@@ -46,8 +46,8 @@ Feel free to customize this project for your specific needs and add your own dat
 
 ## Project Screenshots
 
-![Screenshot 1]("./Img/sample.png")
-![Screenshot 2]("./Img/edit-page.png")
+![Screenshot 1](./Img/sample.png)
+![Screenshot 2](./Img/edit-page.png)
 
 ## License
 
