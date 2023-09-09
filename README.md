@@ -1,34 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Online Food Ordering Dashboard
+
+![Project Preview]("./Img/sample.png")
+
+Welcome to my Next.js project showcasing an interactive and beautiful dark-themed frontend for online food ordering! This project is designed to provide a user-friendly interface for customers to order food online. It utilizes Next.js for the frontend and Tailwind CSS for styling. The data for the menu and items is fetched from an external data file.
+
+## Live Preview
+
+Check out the live preview of this project [here](link-to-live-preview).
+
+## Features
+
+- **Dark Theme**: A visually appealing dark theme enhances the user experience.
+
+- **Dashboard**: The dashboard allows users to browse a variety of menu options and place orders.
+
+- **Menu Selection**: When a menu is selected, it displays different types of food items, each with its price.
+
+- **Order Summary**: As items are added to the cart, the project calculates the total price, including tax, and displays it.
+
+- **Item Management**: Users can easily modify and remove items from their order.
+
+## Technologies Used
+
+- **Next.js**: A React framework for building fast and efficient web applications.
+
+- **Tailwind CSS**: A utility-first CSS framework for creating responsive and highly customizable designs.
+
+## Data Source
+
+The project utilizes an external data file to populate the menu and item information. This approach allows for easy updates and maintenance of the menu without changing the code.
 
 ## Getting Started
 
-First, run the development server:
+1. Clone this repository to your local machine.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+2. Install the necessary dependencies using `npm install`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Start the development server with `npm run dev`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Open your web browser and navigate to `http://localhost:3000` to view the project.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Usage
 
-## Learn More
+Feel free to customize this project for your specific needs and add your own data to the external data file.
 
-To learn more about Next.js, take a look at the following resources:
+## Project Screenshots
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Screenshot 1]("./Img/sample.png")
+![Screenshot 2]("./Img/edit-page.png")
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+This project is licensed under the [MIT License](LICENSE).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Niroyan.K](https://github.com/yanniro2)
+
+## View More Projects
+
+Explore more of my projects on [Upwork](https://www.upwork.com/fl/niroyank).
