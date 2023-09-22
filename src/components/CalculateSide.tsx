@@ -1,10 +1,22 @@
-"use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import TotalPayment from "./TotalPayment";
 import PaymentDetails from "./PaymentDetails";
-function CalculateSide({ total, items, onEditItem, onRemoveItem }) {
+
+interface CalculateSideProps {
+  total: number;
+  items: Array<any>; // Replace 'any' with a specific type if possible
+  onEditItem: (editedItem: any) => void; // Replace 'any' with a specific type if possible
+  onRemoveItem: (itemToRemove: any) => void; // Replace 'any' with a specific type if possible
+}
+
+function CalculateSide({
+  total,
+  items,
+  onEditItem,
+  onRemoveItem,
+}: CalculateSideProps) {
   return (
     <div className="w-full h-screen relative p-[10px]">
       <div className="flex justify-between items-center pb-[10px]">

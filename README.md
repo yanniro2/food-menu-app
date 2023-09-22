@@ -6,7 +6,7 @@ Welcome to my Next.js project showcasing an interactive and beautiful dark-theme
 
 ## Live Preview
 
-Check out the live preview of this project [here](link-to-live-preview).
+Check out the live preview of this project [here](https://menu-gmi1a948h-yanniro2.vercel.app/).
 
 ## Features
 

@@ -6,8 +6,6 @@ import { useEffect, useState } from "react";
 export default function Navibar() {
   const [isVisible, setIsVisible] = useState<boolean>(true);
 
-  const size = useWindowSize();
-
   function useWindowSize() {
     // Initialize state with undefined width/height so server and client renders match
     // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
@@ -81,19 +79,16 @@ export default function Navibar() {
         className={` pl-2 ${
           isVisible &&
           "w-3/5 xl:w-1/6 lg:w-1/5 md:w-2/5 h-full lg:h-screen z-10 xl:relative lg:absolute absolute md:absolute bg-[#121315] "
-        }`}
-      >
+        }`}>
         <div
           onClick={() => setIsVisible(!isVisible)}
-          className={`absolute top-6 right-4 md:-right-6 flex justify-self-end`}
-        >
+          className={`absolute top-6 right-4 md:-right-6 flex justify-self-end`}>
           <FontAwesomeIcon icon={faClose} size="lg" />
         </div>
         <div
           className={`transition w-full h-full flex-col grow p-[20px] ml-2 ${
             isVisible ? "flex" : "hidden"
-          }`}
-        >
+          }`}>
           <div className="flex my-2 flex-row w-full justify-between font-semibold items-center">
             <div className="flex text-lg md:text-xl">Wimpole EPOS</div>
           </div>
@@ -103,8 +98,7 @@ export default function Navibar() {
               sideNav.map((item) => (
                 <div
                   key="index"
-                  className="text-sm text-[#a1a2a4] p-[12px] rounded hover:text-white hover:bg-[#2d2d2d]"
-                >
+                  className="text-sm text-[#a1a2a4] p-[12px] rounded hover:text-white hover:bg-[#2d2d2d]">
                   {item.text}
                 </div>
               ))
@@ -113,7 +107,7 @@ export default function Navibar() {
             )}
           </div>
 
-          <div className="grid gap-[10px] absolute block bottom-[30px]">
+          <div className="grid gap-[10px] absolute bottom-[30px]">
             <div className="p-[5px] rounded-full flex border-[1px] border-[#FFFFFF] bg-[#2d2d2d] items-center w-fit pr-[20px] text-sm">
               <div className="h-[30px] w-[30px] rounded-full flex justify-center items-center text-xl bg-[#c1dbe8] text-[#000000] font-bold mr-[10px]">
                 L
@@ -139,9 +133,8 @@ export default function Navibar() {
   else {
     return (
       <div
-        onClick={() => setIsVisible(!isVisible)}
-        className="absolute z-10 top-6 left-5 flex justify-self-end"
-      >
+        onClick={() => setIsVisible(false)}
+        className="absolute z-10 top-6 left-5 flex justify-self-end">
         <FontAwesomeIcon icon={faBars} />
       </div>
     );

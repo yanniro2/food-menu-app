@@ -7,22 +7,23 @@ import Searchpart from "@/components/Search";
 import menusData from "@/data/foodItems";
 import MenuItem from "@/components/MenuItem";
 import CalculateSide from "@/components/CalculateSide";
-function page() {
-  const [selectedMenu, setSelectedMenu] = useState(null);
-  const [selectedItems, setSelectedItems] = useState([]);
+
+function Page() {
+  const [selectedMenu, setSelectedMenu] = useState<any>(null);
+  const [selectedItems, setSelectedItems] = useState<any[]>([]);
 
   // Function to handle menu selection
-  const handleMenuSelection = (menu) => {
+  const handleMenuSelection = (menu: any) => {
     setSelectedMenu(menu);
   };
 
   // Function to add an item to the selected items
-  const handleAddToCart = (item) => {
+  const handleAddToCart = (item: any) => {
     setSelectedItems([...selectedItems, item]);
   };
 
   // Function to edit an item in the selected items
-  const handleEditItem = (editedItem) => {
+  const handleEditItem = (editedItem: any) => {
     const updatedItems = selectedItems.map((item) =>
       item.id === editedItem.id ? editedItem : item
     );
@@ -30,7 +31,7 @@ function page() {
   };
 
   // Function to remove an item from the selected items
-  const handleRemoveItem = (itemToRemove) => {
+  const handleRemoveItem = (itemToRemove: any) => {
     const updatedItems = selectedItems.filter(
       (item) => item.id !== itemToRemove.id
     );
@@ -42,19 +43,20 @@ function page() {
     (total, item) => total + item.price,
     0
   );
+
   return (
     <div className="h-screen w-screen bg-[#121315] flex justify-between items-center">
-      <div className="left  w-3/4 h-full relative">
+      <div className="left w-3/4 h-full relative">
         <div className="navbar bg-black absolute top-0 left-0 right-0 h-[4rem] z-50">
           <Navibar />
           <Searchpart />
         </div>
-        <div className=" pt-[4rem] h-full relative">
-          <div className=" h-2/5 w-full">
+        <div className="pt-[4rem] h-full relative">
+          <div className="h-2/5 w-full">
             <Menu menus={menusData} onSelectMenu={handleMenuSelection} />
           </div>
           <div className="h-[1px] w-full bg-[#a1a2a4]"></div>
-          <div className="  h-3/5 w-full overflow-scroll pb-[6rem]">
+          <div className="h-3/5 w-full overflow-scroll pb-[6rem]">
             {selectedMenu ? (
               selectedMenu && (
                 <div>
@@ -66,7 +68,7 @@ function page() {
                 </div>
               )
             ) : (
-              <div className="flex items-center justify-center text-l  p-5">
+              <div className="flex items-center justify-center text-l p-5">
                 No Menus Selected
               </div>
             )}
@@ -77,7 +79,7 @@ function page() {
           </div>
         </div>
       </div>
-      <div className="right  w-1/4  h-screen">
+      <div className="right w-1/4 h-screen">
         {selectedMenu ? (
           selectedMenu && (
             <CalculateSide
@@ -88,7 +90,7 @@ function page() {
             />
           )
         ) : (
-          <div className="flex items-center justify-center text-l  p-5">
+          <div className="flex items-center justify-center text-l p-5">
             No Menus Selected
           </div>
         )}
@@ -97,4 +99,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

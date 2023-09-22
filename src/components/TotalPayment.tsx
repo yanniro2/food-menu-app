@@ -1,5 +1,3 @@
-// components/TotalPayment.js
-"use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSackDollar,
@@ -8,12 +6,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
-const TotalPayment = ({ total }) => {
+interface TotalPaymentProps {
+  total: number | null; // Specify the type for 'total'
+}
+
+const TotalPayment: React.FC<TotalPaymentProps> = ({ total }) => {
   return (
-    <div
-      // className="w-full grid flex-col content-between h-[30%] bg-[#2d2d2d] p-[10px] rounded text-xs mt-6 absolute bottom-0 right-0 z-40"
-      className="absolute left-0 right-0 p-[10px] bottom-0 h-[40%]  w-full z-[100] bg-[#121315]"
-    >
+    <div className="absolute left-0 right-0 p-[10px] bottom-0 h-[40%]  w-full z-[100] bg-[#121315]">
       <div className="grid gap-[10px]">
         <div className="flex justify-between">
           <div className="">Subtotal</div>
@@ -39,8 +38,7 @@ const TotalPayment = ({ total }) => {
         <div className="grid grid-cols-3 gap-[10px] pt-[10px]">
           <div
             tabIndex={1}
-            className="transition-all group duration-500 border-[1px] flex justify-center items-center p-[10px] h-[60px] border-white rounded focus:bg-[#fff]"
-          >
+            className="transition-all group duration-500 border-[1px] flex justify-center items-center p-[10px] h-[60px] border-white rounded focus:bg-[#fff]">
             <FontAwesomeIcon
               className="group-focus:text-black text-[#ffffff] h-[25px]"
               icon={faSackDollar}
@@ -48,8 +46,7 @@ const TotalPayment = ({ total }) => {
           </div>
           <div
             tabIndex={1}
-            className="transition-all group duration-500 border-[1px] flex justify-center items-center p-[10px] border-white focus:bg-[#fff] rounded"
-          >
+            className="transition-all group duration-500 border-[1px] flex justify-center items-center p-[10px] border-white focus:bg-[#fff] rounded">
             <FontAwesomeIcon
               className="text-[#ffffff] group-focus:text-black h-[25px]"
               icon={faCreditCard}
@@ -57,8 +54,7 @@ const TotalPayment = ({ total }) => {
           </div>
           <div
             tabIndex={1}
-            className="transition-all group duration-500 border-[1px] flex justify-center items-center p-[10px] border-white focus:bg-[#fff] rounded"
-          >
+            className="transition-all group duration-500 border-[1px] flex justify-center items-center p-[10px] border-white focus.bg-[#fff] rounded">
             <FontAwesomeIcon
               className="text-[#ffffff] group-focus:text-black h-[25px]"
               icon={faBarcode}
