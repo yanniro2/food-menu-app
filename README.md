@@ -22,7 +22,7 @@ To get started with this project, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yanniro2/food-menu-app.git
+   git clone https://food-menu-app-zeta.vercel.app/
 
 
 2. View Live:
