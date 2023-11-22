@@ -27,5 +27,5 @@ To get started with this project, follow these steps:
 
 2. View Live:
    ```sh
-   https://astro-blog-app.vercel.app/
+   https://epos-beta.vercel.app/
 
